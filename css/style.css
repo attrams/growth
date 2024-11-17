@@ -10,6 +10,7 @@
   --dark-color: #111111;
   --dark-grey-color: #333333;
   --white-color: #ffffff;
+  --black-color: #000000;
 }
 
 a {
@@ -85,6 +86,21 @@ body {
 
 .hero .hero-text {
   width: 70%;
+  margin-bottom: 20px;
+}
+
+/* video */
+.video {
+  padding: 10px 0 40px;
+}
+
+.video-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-preview {
   margin-bottom: 20px;
 }
 
@@ -171,4 +187,25 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+/* background */
+.bg-primary {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.bg-light {
+  background: var(--light-color);
+  color: var(--dark-grey-color);
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: var(--white-color);
+}
+
+.bg-black {
+  background: var(--black-color);
+  color: var(--white-color);
 }
