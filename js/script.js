@@ -1,5 +1,5 @@
-// FAQ Accordion
 document.addEventListener('DOMContentLoaded', () => {
+  // FAQ Accordion
   const faqContainer = document.querySelector('.faq-content');
 
   faqContainer.addEventListener('click', (e) => {
@@ -32,5 +32,13 @@ document.addEventListener('DOMContentLoaded', () => {
         otherGroupIcon.classList.add('fa-plus');
       }
     });
+  });
+
+  // mobile menu
+  const hamburgerButton = document.querySelector('.hamburger-button');
+  const mobileMenu = document.querySelector('.mobile-menu');
+
+  hamburgerButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
   });
 });
